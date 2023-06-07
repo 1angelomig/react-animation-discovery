@@ -1,9 +1,7 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import ZoomIn from "../../components/ui/ZoomIn";
-import ZoomOut from "../../components/ui/ZoomOut";
 
 export default function Home() {
-    const styles = { "font-size": "3rem", display: "flex", "justify-content": "center", "align-items": "center" };
+    const styles = { fontSize: "3rem", display: "flex", justifyContent: "center", alignItems: "center" };
 
     return (
         <div>
@@ -15,7 +13,7 @@ export default function Home() {
                     <div style={{ height: "100vh", ...styles }}>Open Innovation</div>
                 </ParallaxLayer>
                 <ParallaxLayer style={{ backgroundColor: "brown" }} offset={2.5} speed={0}>
-                    <ZoomIn />
+                    <div style={{ height: "100vh", ...styles }}>Living Lab</div>
                 </ParallaxLayer>
                 <ParallaxLayer style={{ backgroundColor: "green" }} offset={3.5} speed={0}>
                     <div style={{ height: "100vh", ...styles }}>Nós Alcançamos</div>
@@ -24,7 +22,7 @@ export default function Home() {
                     <div style={{ height: "100vh", ...styles }}>Nossas Histórias</div>
                 </ParallaxLayer>
                 <ParallaxLayer style={{ backgroundColor: "black", color: "white" }} offset={5.5} speed={0}>
-                    <ZoomOut />
+                    <div style={{ height: "100vh", ...styles }}>Testemunho</div>
                 </ParallaxLayer>
                 <ParallaxLayer style={{ backgroundColor: "white" }} offset={6.5} speed={0}>
                     <div style={{ height: "100vh", ...styles }}>Junte-se à Liga</div>

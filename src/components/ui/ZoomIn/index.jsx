@@ -44,23 +44,11 @@ const Dot = styled(animated.div)`
 `;
 
 export default function ZoomIn() {
-    const containerRef = useRef(null);
-    const { scrollYProgress } = useScroll({
-        container: containerRef,
-        default: {
-            immediate: true,
-        },
-    });
-
     return (
-        <Body ref={containerRef}>
+        <Body>
             <AnimatedLayers>
                 <div style={{ height: "100vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "3rem" }}>Living Lab</div>
-                <Dot
-                    style={{
-                        clipPath: scrollYProgress.to((val) => `circle(${val * 100}%)`),
-                    }}
-                ></Dot>
+                <Dot style={{}}></Dot>
             </AnimatedLayers>
             {new Array(PAGE_COUNT).fill(null).map((_, index) => (
                 <FullPage key={index} />
